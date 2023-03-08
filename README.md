@@ -42,7 +42,7 @@ allowed_domains = example.com, example.co
 
 >> http://127.0.0.1:5001/webp/500x0/TARGET_IMAGE_URL
 
-# 咒語歷程
+# 咒語歷程（請自行轉換成英文跟ChatGPT談心）
 
 ## app1.py
 
