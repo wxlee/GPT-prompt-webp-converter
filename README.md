@@ -28,19 +28,19 @@ allowed_domains = example.com, example.co
 
 # URL訪問格式
 
-> 轉換為webp格式
+轉換為webp格式
 
->> http://127.0.0.1:5001/webp/TARGET_IMAGE_URL
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
 
-> resize （依比例轉換與指定長寬）
+resize （依比例轉換與指定長寬）
 
->> http://127.0.0.1:5001/500x0/TARGET_IMAGE_URL
+`http://127.0.0.1:5001/500x0/TARGET_IMAGE_URL`
 
->> http://127.0.0.1:5001/500x200/TARGET_IMAGE_URL
+`http://127.0.0.1:5001/500x200/TARGET_IMAGE_URL`
 
-> 轉換為webp格式且resize
+轉換為webp格式且resize
 
->> http://127.0.0.1:5001/webp/500x0/TARGET_IMAGE_URL
+`http://127.0.0.1:5001/webp/500x0/TARGET_IMAGE_URL`
 
 # 咒語歷程（請自行轉換成英文跟ChatGPT談心）
 
