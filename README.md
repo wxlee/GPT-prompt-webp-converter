@@ -48,37 +48,79 @@ resize （依比例轉換與指定長寬）
 
 用python flask寫一個web服務，訪問外部連結並轉換成webp格式。
 
+`http://127.0.0.1:5001/TARGET_IMAGE_URL?resize=100x100`
+
 ## app2.py
 
 使用python實作一個圖檔resize的服務。
+
+`http://127.0.0.1:5001/100x100/TARGET_IMAGE_URL`
 
 ## app3.py
 
 合併兩個服務，可以resize，也可以轉換為webp。
 
+`http://127.0.0.1:5001/resize/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/100x100/TARGET_IMAGE_URL`
+
 ## app4.py
 
 僅處理jpg格式的轉檔。
+
+`http://127.0.0.1:5001/resize/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/100x100/TARGET_IMAGE_URL`
 
 ## app5.py
 
 加入png格式的支援，並可使用thread。
 
+`http://127.0.0.1:5001/resize/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/100x100/TARGET_IMAGE_URL`
+
 ## app6.py
 
 用設定檔設置允許的外部網域，不允許的不處理。
+
+`http://127.0.0.1:5001/resize/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/100x100/TARGET_IMAGE_URL`
 
 ## app7.py
 
 針對長乘寬進行優化，若其一包含0的數值，就使用比率進行縮圖。
 
+`http://127.0.0.1:5001/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/200x0/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/100x100/TARGET_IMAGE_URL`
+
+`http://127.0.0.1:5001/webp/200x0/TARGET_IMAGE_URL`
+
 ## app8.py
 
 針對app7進行再優化，並提供建議。
 
+`使用方法如app7.py`
+
 ## app9.py
 
 加入error control並優化。
+
+`使用方法如app7.py`
 
 ## app10.py
 
@@ -87,6 +129,8 @@ resize （依比例轉換與指定長寬）
 修正原始圖檔為webp進行resize的錯誤。
 
 如果原始圖檔為webp格式，就不再轉換為jpg，僅resize。
+
+`使用方法如app7.py`
 
 
 結論

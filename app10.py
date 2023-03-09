@@ -176,7 +176,7 @@ def resize_and_convert_to_webp(width, height, url):
     return send_file(webp_img, mimetype='image/webp')
 
 if __name__ == '__main__':
-	app.run(debug=True, port=5001, threaded=True)
+    app.run(debug=True, port=5001, threaded=True)
     #app.run(port=5001, threaded=True)
 
 
